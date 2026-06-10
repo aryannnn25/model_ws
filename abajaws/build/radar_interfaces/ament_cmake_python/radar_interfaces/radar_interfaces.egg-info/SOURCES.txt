@@ -1,0 +1,8 @@
+setup.py
+radar_interfaces/__init__.py
+radar_interfaces.egg-info/PKG-INFO
+radar_interfaces.egg-info/SOURCES.txt
+radar_interfaces.egg-info/dependency_links.txt
+radar_interfaces.egg-info/top_level.txt
+radar_interfaces/msg/__init__.py
+radar_interfaces/msg/_radar_message.py

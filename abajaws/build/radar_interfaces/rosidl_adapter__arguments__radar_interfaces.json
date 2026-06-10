@@ -1,0 +1,6 @@
+{
+  "package_name": "radar_interfaces",
+  "non_idl_tuples": [
+    "/home/a-baja/abajaws/src/radar_interfaces:msg/RadarMessage.msg"
+  ]
+}

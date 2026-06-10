@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "radar_interfaces__rs",
+		"source" : "/home/a-baja/abajaws/build/radar_interfaces/radar_interfaces__rs"
+	}
+}

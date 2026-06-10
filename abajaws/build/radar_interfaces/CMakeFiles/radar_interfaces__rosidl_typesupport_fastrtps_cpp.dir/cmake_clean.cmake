@@ -1,0 +1,13 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/radar_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/radar_interfaces/msg/detail/dds_fastrtps/radar_message__type_support.cpp.o"
+  "CMakeFiles/radar_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/radar_interfaces/msg/detail/dds_fastrtps/radar_message__type_support.cpp.o.d"
+  "libradar_interfaces__rosidl_typesupport_fastrtps_cpp.pdb"
+  "libradar_interfaces__rosidl_typesupport_fastrtps_cpp.so"
+  "rosidl_typesupport_fastrtps_cpp/radar_interfaces/msg/detail/dds_fastrtps/radar_message__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/radar_interfaces/msg/detail/radar_message__rosidl_typesupport_fastrtps_cpp.hpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/radar_interfaces__rosidl_typesupport_fastrtps_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

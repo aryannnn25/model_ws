@@ -1,0 +1,7 @@
+[console_scripts]
+radar_data = a021vehicle.radar_data:main
+radar_node = a021vehicle.rawradar:main
+receiver_node = a021vehicle.radar_receiver:main
+spi_bridge = a021vehicle.radar_spi_bridge:main
+vehiclecontrol = a021vehicle.vehiclecontrol:main
+
