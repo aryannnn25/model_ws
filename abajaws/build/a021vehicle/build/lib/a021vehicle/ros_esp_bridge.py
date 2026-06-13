@@ -1,0 +1,240 @@
+#!/usr/bin/env python3
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import Float32, Int32
+import can
+import struct
+import time
+import threading
+import csv
+from datetime import datetime
+
+CAN_ID_JETSON_CMD = 0x210
+CAN_ID_ESP32_TEL  = 0x160
+CAN_ID_ESP32_STAT = 0x161
+CAN_ID_ESP32_RPM  = 0x162
+CAN_ID_ESP32_HB   = 0x163
+
+class CANBrakeBridgeNode(Node):
+    def __init__(self):
+        super().__init__('can_brake_bridge')
+        
+        self.brake_cmd = 0.0
+        self.latest_speed_kmh = 0.0
+        self.latest_accel_ms2 = 0.0
+        self.latest_brake_state = 0
+        self.latest_control_mode = 0
+        self.latest_raw_rpm = 0.0
+        self.latest_filt_rpm = 0.0
+        self.rx_count = 0
+        self.tx_count = 0
+        self.esp32_alive = 0
+        self.last_esp32_rx_time = 0.0
+        
+        # ── CSV Logging Initialization ──────────────────────────────
+        timestamp_str = datetime.now().strftime("%Y%m%d_%H%M%S")
+        self.csv_filename = f"telemetry_{timestamp_str}.csv"
+        try:
+            self.csv_file = open(self.csv_filename, mode='w', newline='')
+            self.csv_writer = csv.writer(self.csv_file)
+            self.csv_writer.writerow([
+                "Timestamp", 
+                "Speed_kmh", 
+                "Accel_ms2", 
+                "Raw_RPM", 
+                "Filtered_RPM", 
+                "Brake_State", 
+                "Control_Mode"
+            ])
+            self.get_logger().info(f"Logging telemetry to CSV file: {self.csv_filename}")
+        except Exception as e:
+            self.get_logger().error(f"Failed to initialize CSV logging: {e}")
+            self.csv_file = None
+            
+        # ── ROS 2 Subscribers & Publishers ──────────────────────────
+        self.subscription = self.create_subscription(
+            Float32,
+            '/brake_cmd',
+            self.brake_callback,
+            10
+        )
+        self.alive_pub = self.create_publisher(Int32, '/esp32_alive', 10)
+        
+        # ── CAN Initialization ──────────────────────────────────────
+        try:
+            self.bus = can.interface.Bus(channel='can1', interface='socketcan', bitrate=1000000)
+            self.get_logger().info("Successfully connected to CAN bus (can1) at 1 Mbps.")
+        except Exception as e:
+            self.get_logger().error(f"Failed to connect to CAN: {e}. Did you run 'sudo ip link set can1 up'?")
+            raise RuntimeError("CAN init failed")
+            
+        self.running = True
+        self.rx_thread = threading.Thread(target=self.can_rx_loop, daemon=True)
+        self.rx_thread.start()
+        
+        # ── Timers ──────────────────────────────────────────────────
+        # 100 Hz CAN Transmit Loop (0.01 seconds)
+        self.tx_timer = self.create_timer(0.01, self.can_tx_loop)
+        
+        # 10 Hz Heartbeat / Alive monitoring & publish loop (0.1 seconds)
+        self.alive_timer = self.create_timer(0.1, self.check_alive_loop)
+        
+        # 2 Hz Dashboard Print Loop (0.5 seconds)
+        self.dash_timer = self.create_timer(0.5, self.dashboard_loop)
+        
+        print("\n" + "=" * 60)
+        print("  JETSON AEB LONGITUDINAL CONTROLLER (CAN BUS 1Mbps)")
+        print("=" * 60 + "\n")
+
+    def brake_callback(self, msg: Float32):
+        """Receives incoming brake commands from the vehiclecontrol node."""
+        new_brake = max(0.0, min(1.0, float(msg.data)))
+        if new_brake > 0.5 and self.brake_cmd <= 0.5:
+             print(f"\n[AEB TRIGGERED] Brake command updated to 1 (EXTEND SEQUENCE)")
+        self.brake_cmd = new_brake
+
+    def check_alive_loop(self):
+        """Checks if the ESP32 is alive and publishes the status at 10 Hz."""
+        if time.time() - self.last_esp32_rx_time > 1.0:
+            self.esp32_alive = 0
+        else:
+            self.esp32_alive = 1
+            
+        msg = Int32()
+        msg.data = self.esp32_alive
+        self.alive_pub.publish(msg)
+
+    def can_rx_loop(self):
+        """Background thread to listen to ESP32 CAN telemetry."""
+        # FIX 1: Added rclpy.ok() check to gracefully stop thread if ROS shuts down
+        while self.running and rclpy.ok():
+            try:
+                msg = self.bus.recv(timeout=0.1)
+                if msg is None: continue
+                
+                self.rx_count += 1
+                
+                # Update alive timestamp if we receive any valid ESP32 CAN packet
+                if msg.arbitration_id in (CAN_ID_ESP32_TEL, CAN_ID_ESP32_RPM, CAN_ID_ESP32_STAT, CAN_ID_ESP32_HB):
+                    self.last_esp32_rx_time = time.time()
+                    self.esp32_alive = 1
+                
+                if msg.arbitration_id == CAN_ID_ESP32_TEL and msg.dlc >= 8:
+                    speed, accel = struct.unpack('<ff', msg.data[:8])
+                    self.latest_speed_kmh = speed
+                    self.latest_accel_ms2 = accel
+                    self.log_to_csv()
+                    
+                elif msg.arbitration_id == CAN_ID_ESP32_RPM and msg.dlc >= 8:
+                    raw_rpm, filt_rpm = struct.unpack('<ff', msg.data[:8])
+                    self.latest_raw_rpm = raw_rpm
+                    self.latest_filt_rpm = filt_rpm
+                    
+                elif msg.arbitration_id == CAN_ID_ESP32_STAT and msg.dlc >= 2:
+                    self.latest_brake_state = msg.data[0]
+                    self.latest_control_mode = msg.data[1]
+                    
+            except Exception:
+                pass
+
+    def log_to_csv(self):
+        """Logs current telemetry snapshot to CSV file."""
+        if self.csv_file:
+            try:
+                now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
+                self.csv_writer.writerow([
+                    now_str,
+                    f"{self.latest_speed_kmh:.2f}",
+                    f"{self.latest_accel_ms2:.2f}",
+                    f"{self.latest_raw_rpm:.2f}",
+                    f"{self.latest_filt_rpm:.2f}",
+                    self.latest_brake_state,
+                    self.latest_control_mode
+                ])
+                self.csv_file.flush()
+            except Exception:
+                pass
+
+    def can_tx_loop(self):
+        """Executes at 100Hz: Sends the command byte to the ESP32."""
+        cmd_byte = 1 if self.brake_cmd > 0.5 else 0
+        
+        msg = can.Message(arbitration_id=CAN_ID_JETSON_CMD, data=[cmd_byte], is_extended_id=False)
+        try:
+            self.bus.send(msg)
+            self.tx_count += 1
+        except Exception:
+            pass
+
+    def dashboard_loop(self):
+        """Executes at 2Hz: Prints the live vehicle data dashboard."""
+        state_strs = ["HOLD", "EXTEND", "RETRACT"]
+        mode_strs = ["JETSON_CAN", "RC_FALLBACK", "FAILSAFE"]
+        
+        b_idx = min(2, self.latest_brake_state)
+        m_idx = min(2, self.latest_control_mode)
+        
+        cmd_str = "BRAKE" if self.brake_cmd > 0.5 else "IDLE"
+        
+        esp_status = "ALIVE" if self.esp32_alive == 1 else "OFFLINE"
+        
+        dash = (
+            f"\r  ESP:{esp_status:7s} | "
+            f"SPD:{self.latest_speed_kmh:5.1f} km/h | "
+            f"ACC:{self.latest_accel_ms2:6.2f} m/s^2 | "
+            f"JETSON_CMD:{cmd_str:7s} | "
+            f"ACT_STATE:{state_strs[b_idx]} | "
+            f"CTRL_MODE:{mode_strs[m_idx]} | "
+            f"RX:{self.rx_count} TX:{self.tx_count}"
+        )
+        print(dash + "   ", end="", flush=True)
+
+    def destroy_node(self):
+        """Shutdown hook to safely kill the throttle/brakes on the ESP32."""
+        print("\n\n[SHUTDOWN] Node killed. Sending idle (0) to ESP32...")
+        
+        # 1. Stop the loop in the rx_thread
+        self.running = False
+        
+        # FIX 2: Wait for rx_thread to exit cleanly before shutting down the bus
+        if self.rx_thread.is_alive():
+            self.rx_thread.join(timeout=1.0)
+
+        try:
+            # Send 3 idle frames to ensure ESP32 receives it
+            for _ in range(3):
+                msg = can.Message(arbitration_id=CAN_ID_JETSON_CMD, data=[0], is_extended_id=False)
+                self.bus.send(msg)
+                time.sleep(0.01)
+            # Shut down CAN interface gracefully
+            self.bus.shutdown()
+        except:
+            pass
+            
+        # Close CSV file
+        if hasattr(self, 'csv_file') and self.csv_file:
+            try:
+                self.csv_file.close()
+                print(f"[SHUTDOWN] Closed telemetry CSV log file: {self.csv_filename}")
+            except Exception:
+                pass
+                
+        super().destroy_node()
+
+
+def main(args=None):
+    rclpy.init(args=args)
+    node = CANBrakeBridgeNode()
+
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        node.get_logger().info("SIGINT received. Shutting down gracefully...")
+    finally:
+        node.destroy_node()
+        # FIX 3: Check rclpy.ok() to prevent RCLError
+        if rclpy.ok():
+            rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()

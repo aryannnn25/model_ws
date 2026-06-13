@@ -1,0 +1,12 @@
+[0.015s] Invoking command in '/home/a-baja/abajaws/build/radar_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a-baja/abajaws/install/a021vehicle:/opt/ros/humble /usr/bin/cmake --build /home/a-baja/abajaws/build/radar_interfaces -- -j6 -l6
+[0.093s] failed to create symbolic link '/home/a-baja/abajaws/build/radar_interfaces/ament_cmake_python/radar_interfaces/radar_interfaces' because existing path cannot be removed: Is a directory
+[0.093s] [  9%] Built target radar_interfaces__rs
+[0.093s] [ 12%] Built target radar_interfaces__rosidl_generator_c
+[0.094s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_radar_interfaces.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_radar_interfaces] Error 1
+[0.095s] gmake[1]: *** [CMakeFiles/Makefile2:440: CMakeFiles/ament_cmake_python_symlink_radar_interfaces.dir/all] Error 2
+[0.095s] gmake[1]: *** Waiting for unfinished jobs....
+[0.096s] [ 15%] Built target radar_interfaces__cpp
+[0.112s] [35m[1mConsolidate compiler generated dependencies of target radar_interfaces__rosidl_typesupport_c[0m
+[0.132s] [ 25%] Built target radar_interfaces__rosidl_typesupport_c
+[0.134s] gmake: *** [Makefile:146: all] Error 2
+[0.138s] Invoked command in '/home/a-baja/abajaws/build/radar_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a-baja/abajaws/install/a021vehicle:/opt/ros/humble /usr/bin/cmake --build /home/a-baja/abajaws/build/radar_interfaces -- -j6 -l6

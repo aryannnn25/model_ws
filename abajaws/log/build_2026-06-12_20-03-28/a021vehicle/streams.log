@@ -1,0 +1,28 @@
+[2.377s] Invoking command in '/home/a-baja/abajaws/src/a021vehicle': LD_LIBRARY_PATH=/home/a-baja/abajaws/install/radar_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 NX_CONNECTION=192.168.55.100 51844 192.168.55.1 4000 PYTHONPATH=/home/a-baja/abajaws/build/a021vehicle/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/a021vehicle build --build-base /home/a-baja/abajaws/build/a021vehicle/build install --record /home/a-baja/abajaws/build/a021vehicle/install.log --single-version-externally-managed install_data
+[2.826s] running egg_info
+[2.829s] writing ../../build/a021vehicle/a021vehicle.egg-info/PKG-INFO
+[2.831s] writing dependency_links to ../../build/a021vehicle/a021vehicle.egg-info/dependency_links.txt
+[2.832s] writing entry points to ../../build/a021vehicle/a021vehicle.egg-info/entry_points.txt
+[2.833s] writing requirements to ../../build/a021vehicle/a021vehicle.egg-info/requires.txt
+[2.833s] writing top-level names to ../../build/a021vehicle/a021vehicle.egg-info/top_level.txt
+[2.837s] reading manifest file '../../build/a021vehicle/a021vehicle.egg-info/SOURCES.txt'
+[2.839s] writing manifest file '../../build/a021vehicle/a021vehicle.egg-info/SOURCES.txt'
+[2.839s] running build
+[2.839s] running build_py
+[2.842s] copying a021vehicle/vehiclecontrol.py -> /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle
+[2.846s] running install
+[2.846s] running install_lib
+[2.848s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/vehiclecontrol.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle
+[2.851s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/vehiclecontrol.py to vehiclecontrol.cpython-310.pyc
+[2.854s] running install_data
+[2.854s] running install_egg_info
+[2.857s] removing '/home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle-0.0.0-py3.10.egg-info' (and everything under it)
+[2.857s] Copying ../../build/a021vehicle/a021vehicle.egg-info to /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle-0.0.0-py3.10.egg-info
+[2.859s] running install_scripts
+[2.892s] Installing esp_bridge script to /home/a-baja/abajaws/install/a021vehicle/lib/a021vehicle
+[2.893s] Installing radar_data script to /home/a-baja/abajaws/install/a021vehicle/lib/a021vehicle
+[2.893s] Installing radar_node script to /home/a-baja/abajaws/install/a021vehicle/lib/a021vehicle
+[2.893s] Installing receiver_node script to /home/a-baja/abajaws/install/a021vehicle/lib/a021vehicle
+[2.893s] Installing vehiclecontrol script to /home/a-baja/abajaws/install/a021vehicle/lib/a021vehicle
+[2.895s] writing list of installed files to '/home/a-baja/abajaws/build/a021vehicle/install.log'
+[2.976s] Invoked command in '/home/a-baja/abajaws/src/a021vehicle' returned '0': LD_LIBRARY_PATH=/home/a-baja/abajaws/install/radar_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 NX_CONNECTION=192.168.55.100 51844 192.168.55.1 4000 PYTHONPATH=/home/a-baja/abajaws/build/a021vehicle/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/a021vehicle build --build-base /home/a-baja/abajaws/build/a021vehicle/build install --record /home/a-baja/abajaws/build/a021vehicle/install.log --single-version-externally-managed install_data

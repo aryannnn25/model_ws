@@ -1,0 +1,127 @@
+[0.013s] Invoking command in '/home/a-baja/abajaws/build/radar_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a-baja/abajaws/install/a021vehicle:/opt/ros/humble NX_CONNECTION=192.168.55.100 51844 192.168.55.1 4000 /usr/bin/cmake --build /home/a-baja/abajaws/build/radar_interfaces -- -j6 -l6
+[0.233s] [  3%] Built target radar_interfaces__rs
+[0.373s] [  3%] Built target ament_cmake_python_symlink_radar_interfaces
+[0.426s] [  6%] Built target radar_interfaces__cpp
+[0.961s] running egg_info
+[0.967s] writing radar_interfaces.egg-info/PKG-INFO
+[0.968s] writing dependency_links to radar_interfaces.egg-info/dependency_links.txt
+[0.968s] writing top-level names to radar_interfaces.egg-info/top_level.txt
+[0.970s] reading manifest file 'radar_interfaces.egg-info/SOURCES.txt'
+[0.971s] writing manifest file 'radar_interfaces.egg-info/SOURCES.txt'
+[1.035s] [  6%] Built target ament_cmake_python_build_radar_interfaces_egg
+[1.119s] [ 15%] Built target radar_interfaces__rosidl_typesupport_cpp
+[1.220s] [ 25%] Built target radar_interfaces__rosidl_typesupport_introspection_cpp
+[1.260s] [ 34%] Built target radar_interfaces__rosidl_typesupport_fastrtps_cpp
+[1.300s] [ 43%] Built target radar_interfaces__rosidl_generator_c
+[1.424s] [ 53%] Built target radar_interfaces__rosidl_typesupport_c
+[1.564s] [ 62%] Built target radar_interfaces__rosidl_typesupport_introspection_c
+[1.688s] [ 71%] Built target radar_interfaces__rosidl_typesupport_fastrtps_c
+[1.818s] [ 71%] Built target radar_interfaces
+[1.943s] [ 75%] Built target radar_interfaces__py
+[2.070s] [ 81%] Built target radar_interfaces__rosidl_generator_py
+[2.176s] [ 87%] Built target radar_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[2.364s] [ 93%] Built target radar_interfaces__rosidl_typesupport_c__pyext
+[2.467s] [100%] Built target radar_interfaces__rosidl_typesupport_introspection_c__pyext
+[2.539s] Invoked command in '/home/a-baja/abajaws/build/radar_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a-baja/abajaws/install/a021vehicle:/opt/ros/humble NX_CONNECTION=192.168.55.100 51844 192.168.55.1 4000 /usr/bin/cmake --build /home/a-baja/abajaws/build/radar_interfaces -- -j6 -l6
+[2.558s] Invoking command in '/home/a-baja/abajaws/build/radar_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a-baja/abajaws/install/a021vehicle:/opt/ros/humble NX_CONNECTION=192.168.55.100 51844 192.168.55.1 4000 /usr/bin/cmake --install /home/a-baja/abajaws/build/radar_interfaces
+[2.594s] -- Install configuration: ""
+[2.595s] -- Execute custom install script
+[2.595s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/ament_index/resource_index/rosidl_interfaces/radar_interfaces
+[2.596s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/detail/radar_message__functions.h
+[2.596s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/detail/radar_message__struct.h
+[2.597s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/detail/radar_message__type_support.h
+[2.597s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/radar_message.h
+[2.597s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/rosidl_generator_c__visibility_control.h
+[2.597s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/environment/library_path.sh
+[2.597s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/environment/library_path.dsv
+[2.597s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/detail/radar_message__rosidl_typesupport_fastrtps_c.h
+[2.597s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.598s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/detail/radar_message__rosidl_typesupport_introspection_c.h
+[2.598s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.599s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/detail/radar_message__builder.hpp
+[2.599s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/detail/radar_message__struct.hpp
+[2.599s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/detail/radar_message__traits.hpp
+[2.599s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/detail/radar_message__type_support.hpp
+[2.599s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/radar_message.hpp
+[2.599s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[2.612s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/detail/radar_message__rosidl_typesupport_fastrtps_cpp.hpp
+[2.613s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.613s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/detail/radar_message__rosidl_typesupport_introspection_cpp.hpp
+[2.613s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/environment/pythonpath.sh
+[2.613s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/environment/pythonpath.dsv
+[2.613s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[2.614s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[2.614s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[2.614s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[2.615s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/__init__.py
+[2.615s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/_radar_interfaces_s.ep.rosidl_typesupport_c.c
+[2.615s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/_radar_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.615s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/_radar_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[2.615s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/libradar_interfaces__rosidl_generator_py.so
+[2.616s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/msg/__init__.py
+[2.616s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/msg/_radar_message.py
+[2.616s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/msg/_radar_message_s.c
+[2.616s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/radar_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[2.616s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/radar_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[2.616s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/radar_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[2.617s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/radar_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[2.617s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/radar_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[2.617s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/radar_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[2.617s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/ament_index/resource_index/rust_packages/radar_interfaces
+[2.618s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/rust/Cargo.toml
+[2.618s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/rust/build.rs
+[2.618s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/rust/src/lib.rs
+[2.618s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/rust/src/msg.rs
+[2.619s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/rust/src/msg/rmw.rs
+[2.619s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/msg/RadarMessage.idl
+[2.619s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/msg/RadarMessage.msg
+[2.619s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/ament_index/resource_index/package_run_dependencies/radar_interfaces
+[2.619s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/ament_index/resource_index/parent_prefix_path/radar_interfaces
+[2.621s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/environment/ament_prefix_path.sh
+[2.621s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/environment/ament_prefix_path.dsv
+[2.621s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/environment/path.sh
+[2.621s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/environment/path.dsv
+[2.622s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/local_setup.bash
+[2.623s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/local_setup.sh
+[2.623s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/local_setup.zsh
+[2.623s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/local_setup.dsv
+[2.623s] -- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/package.dsv
+[2.664s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/ament_index/resource_index/packages/radar_interfaces
+[2.664s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/rosidl_cmake-extras.cmake
+[2.664s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.664s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[2.665s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[2.665s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.665s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.665s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.665s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/radar_interfacesConfig.cmake
+[2.666s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/radar_interfacesConfig-version.cmake
+[2.666s] -- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/package.xml
+[2.666s] -- Up-to-date: /home/a-baja/abajaws/install/radar_interfaces/lib/libradar_interfaces__rosidl_generator_c.so
+[2.667s] -- Up-to-date: /home/a-baja/abajaws/install/radar_interfaces/lib/libradar_interfaces__rosidl_typesupport_fastrtps_c.so
+[2.667s] -- Up-to-date: /home/a-baja/abajaws/install/radar_interfaces/lib/libradar_interfaces__rosidl_typesupport_introspection_c.so
+[2.667s] -- Up-to-date: /home/a-baja/abajaws/install/radar_interfaces/lib/libradar_interfaces__rosidl_typesupport_c.so
+[2.668s] -- Up-to-date: /home/a-baja/abajaws/install/radar_interfaces/lib/libradar_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[2.668s] -- Up-to-date: /home/a-baja/abajaws/install/radar_interfaces/lib/libradar_interfaces__rosidl_typesupport_introspection_cpp.so
+[2.668s] -- Up-to-date: /home/a-baja/abajaws/install/radar_interfaces/lib/libradar_interfaces__rosidl_typesupport_cpp.so
+[2.793s] Listing '/home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces'...
+[2.793s] Listing '/home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/msg'...
+[2.809s] -- Up-to-date: /home/a-baja/abajaws/install/radar_interfaces/lib/libradar_interfaces__rosidl_generator_py.so
+[2.810s] -- Up-to-date: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/export_radar_interfaces__rosidl_generator_cExport.cmake
+[2.810s] -- Up-to-date: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/export_radar_interfaces__rosidl_generator_cExport-noconfig.cmake
+[2.810s] -- Up-to-date: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/export_radar_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[2.811s] -- Up-to-date: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/export_radar_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.811s] -- Up-to-date: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/radar_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[2.812s] -- Up-to-date: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/radar_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.812s] -- Up-to-date: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/radar_interfaces__rosidl_typesupport_cExport.cmake
+[2.812s] -- Up-to-date: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/radar_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[2.813s] -- Up-to-date: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/export_radar_interfaces__rosidl_generator_cppExport.cmake
+[2.813s] -- Up-to-date: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/export_radar_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.814s] -- Up-to-date: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/export_radar_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.814s] -- Up-to-date: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/radar_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[2.814s] -- Up-to-date: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/radar_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.815s] -- Up-to-date: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/radar_interfaces__rosidl_typesupport_cppExport.cmake
+[2.815s] -- Up-to-date: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/radar_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[2.816s] -- Up-to-date: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/export_radar_interfaces__rosidl_generator_pyExport.cmake
+[2.816s] -- Up-to-date: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/export_radar_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[2.830s] Invoked command in '/home/a-baja/abajaws/build/radar_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a-baja/abajaws/install/a021vehicle:/opt/ros/humble NX_CONNECTION=192.168.55.100 51844 192.168.55.1 4000 /usr/bin/cmake --install /home/a-baja/abajaws/build/radar_interfaces

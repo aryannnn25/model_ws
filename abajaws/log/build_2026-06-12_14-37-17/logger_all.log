@@ -1,0 +1,226 @@
+[0.171s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.172s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffae0505e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffae0500d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffae0500d0>>)
+[0.442s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.442s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.442s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.442s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.442s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.443s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.443s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/a-baja/abajaws'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/a021vehicle) by extensions ['ignore', 'ignore_ament_install']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/a021vehicle) by extension 'ignore'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/a021vehicle) by extension 'ignore_ament_install'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/a021vehicle) by extensions ['colcon_pkg']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/a021vehicle) by extension 'colcon_pkg'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/a021vehicle) by extensions ['colcon_meta']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/a021vehicle) by extension 'colcon_meta'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/a021vehicle) by extensions ['ros']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/a021vehicle) by extension 'ros'
+[0.470s] DEBUG:colcon.colcon_core.package_identification:Package 'src/a021vehicle' with type 'ros.ament_python' and name 'a021vehicle'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_interfaces) by extension 'ignore'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_interfaces) by extension 'ignore_ament_install'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_interfaces) by extensions ['colcon_pkg']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_interfaces) by extension 'colcon_pkg'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_interfaces) by extensions ['colcon_meta']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_interfaces) by extension 'colcon_meta'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_interfaces) by extensions ['ros']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_interfaces) by extension 'ros'
+[0.472s] DEBUG:colcon.colcon_core.package_identification:Package 'src/radar_interfaces' with type 'ros.ament_cmake' and name 'radar_interfaces'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(static) by extensions ['ignore', 'ignore_ament_install']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(static) by extension 'ignore'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(static) by extension 'ignore_ament_install'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(static) by extensions ['colcon_pkg']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(static) by extension 'colcon_pkg'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(static) by extensions ['colcon_meta']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(static) by extension 'colcon_meta'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(static) by extensions ['ros']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(static) by extension 'ros'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(static) by extensions ['cmake', 'python']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(static) by extension 'cmake'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(static) by extension 'python'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(static) by extensions ['python_setup_py']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(static) by extension 'python_setup_py'
+[0.473s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.473s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.473s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.473s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.473s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.506s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.506s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.533s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/a-baja/abajaws/install/radar_interfaces' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.534s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/a-baja/abajaws/install/radar_interfaces' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.535s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/a-baja/abajaws/install
+[0.537s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 273 installed packages in /opt/ros/humble
+[0.539s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.598s] Level 5:colcon.colcon_core.verb:set package 'radar_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.599s] Level 5:colcon.colcon_core.verb:set package 'radar_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.599s] Level 5:colcon.colcon_core.verb:set package 'radar_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.599s] Level 5:colcon.colcon_core.verb:set package 'radar_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.599s] Level 5:colcon.colcon_core.verb:set package 'radar_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.599s] Level 5:colcon.colcon_core.verb:set package 'radar_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.599s] Level 5:colcon.colcon_core.verb:set package 'radar_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.599s] Level 5:colcon.colcon_core.verb:set package 'radar_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.599s] Level 5:colcon.colcon_core.verb:set package 'radar_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.599s] DEBUG:colcon.colcon_core.verb:Building package 'radar_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/a-baja/abajaws/build/radar_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/a-baja/abajaws/install/radar_interfaces', 'merge_install': False, 'path': '/home/a-baja/abajaws/src/radar_interfaces', 'symlink_install': True, 'test_result_base': None}
+[0.600s] Level 5:colcon.colcon_core.verb:set package 'a021vehicle' build argument 'cmake_args' from command line to 'None'
+[0.600s] Level 5:colcon.colcon_core.verb:set package 'a021vehicle' build argument 'cmake_target' from command line to 'None'
+[0.600s] Level 5:colcon.colcon_core.verb:set package 'a021vehicle' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.600s] Level 5:colcon.colcon_core.verb:set package 'a021vehicle' build argument 'cmake_clean_cache' from command line to 'False'
+[0.600s] Level 5:colcon.colcon_core.verb:set package 'a021vehicle' build argument 'cmake_clean_first' from command line to 'False'
+[0.600s] Level 5:colcon.colcon_core.verb:set package 'a021vehicle' build argument 'cmake_force_configure' from command line to 'False'
+[0.600s] Level 5:colcon.colcon_core.verb:set package 'a021vehicle' build argument 'ament_cmake_args' from command line to 'None'
+[0.600s] Level 5:colcon.colcon_core.verb:set package 'a021vehicle' build argument 'catkin_cmake_args' from command line to 'None'
+[0.600s] Level 5:colcon.colcon_core.verb:set package 'a021vehicle' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.600s] DEBUG:colcon.colcon_core.verb:Building package 'a021vehicle' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/a-baja/abajaws/build/a021vehicle', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/a-baja/abajaws/install/a021vehicle', 'merge_install': False, 'path': '/home/a-baja/abajaws/src/a021vehicle', 'symlink_install': True, 'test_result_base': None}
+[0.600s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.602s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.603s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/a-baja/abajaws/src/radar_interfaces' with build type 'ament_cmake'
+[0.603s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/a-baja/abajaws/src/radar_interfaces'
+[0.606s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.606s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.606s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.617s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/a-baja/abajaws/build/radar_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a-baja/abajaws/install/a021vehicle:/opt/ros/humble /usr/bin/cmake /home/a-baja/abajaws/src/radar_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/a-baja/abajaws/install/radar_interfaces
+[3.708s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/a-baja/abajaws/build/radar_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a-baja/abajaws/install/a021vehicle:/opt/ros/humble /usr/bin/cmake /home/a-baja/abajaws/src/radar_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/a-baja/abajaws/install/radar_interfaces
+[3.713s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/a-baja/abajaws/build/radar_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a-baja/abajaws/install/a021vehicle:/opt/ros/humble /usr/bin/cmake --build /home/a-baja/abajaws/build/radar_interfaces -- -j6 -l6
+[6.843s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/a-baja/abajaws/build/radar_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a-baja/abajaws/install/a021vehicle:/opt/ros/humble /usr/bin/cmake --build /home/a-baja/abajaws/build/radar_interfaces -- -j6 -l6
+[6.863s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/a-baja/abajaws/build/radar_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a-baja/abajaws/install/a021vehicle:/opt/ros/humble /usr/bin/cmake --install /home/a-baja/abajaws/build/radar_interfaces
+[8.115s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(radar_interfaces)
+[8.117s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/a-baja/abajaws/build/radar_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a-baja/abajaws/install/a021vehicle:/opt/ros/humble /usr/bin/cmake --install /home/a-baja/abajaws/build/radar_interfaces
+[8.125s] Level 1:colcon.colcon_core.environment:checking '/home/a-baja/abajaws/install/radar_interfaces' for CMake module files
+[8.128s] Level 1:colcon.colcon_core.environment:checking '/home/a-baja/abajaws/install/radar_interfaces' for CMake config files
+[8.132s] Level 1:colcon.colcon_core.shell:create_environment_hook('radar_interfaces', 'cmake_prefix_path')
+[8.133s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/hook/cmake_prefix_path.ps1'
+[8.136s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/hook/cmake_prefix_path.dsv'
+[8.137s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/hook/cmake_prefix_path.sh'
+[8.141s] Level 1:colcon.colcon_core.environment:checking '/home/a-baja/abajaws/install/radar_interfaces/lib'
+[8.141s] Level 1:colcon.colcon_core.shell:create_environment_hook('radar_interfaces', 'ld_library_path_lib')
+[8.142s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/hook/ld_library_path_lib.ps1'
+[8.144s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/hook/ld_library_path_lib.dsv'
+[8.145s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/hook/ld_library_path_lib.sh'
+[8.146s] Level 1:colcon.colcon_core.environment:checking '/home/a-baja/abajaws/install/radar_interfaces/bin'
+[8.146s] Level 1:colcon.colcon_core.environment:checking '/home/a-baja/abajaws/install/radar_interfaces/lib/pkgconfig/radar_interfaces.pc'
+[8.147s] Level 1:colcon.colcon_core.environment:checking '/home/a-baja/abajaws/install/radar_interfaces/lib/python3.10/site-packages'
+[8.149s] Level 1:colcon.colcon_core.environment:checking '/home/a-baja/abajaws/install/radar_interfaces/bin'
+[8.150s] INFO:colcon.colcon_core.shell:Creating package script '/home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/package.ps1'
+[8.154s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/package.dsv'
+[8.156s] INFO:colcon.colcon_core.shell:Creating package script '/home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/package.sh'
+[8.159s] INFO:colcon.colcon_core.shell:Creating package script '/home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/package.bash'
+[8.162s] INFO:colcon.colcon_core.shell:Creating package script '/home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/package.zsh'
+[8.164s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/a-baja/abajaws/install/radar_interfaces/share/colcon-core/packages/radar_interfaces)
+[8.167s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(radar_interfaces)
+[8.167s] Level 1:colcon.colcon_core.environment:checking '/home/a-baja/abajaws/install/radar_interfaces' for CMake module files
+[8.169s] Level 1:colcon.colcon_core.environment:checking '/home/a-baja/abajaws/install/radar_interfaces' for CMake config files
+[8.173s] Level 1:colcon.colcon_core.shell:create_environment_hook('radar_interfaces', 'cmake_prefix_path')
+[8.173s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/hook/cmake_prefix_path.ps1'
+[8.175s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/hook/cmake_prefix_path.dsv'
+[8.176s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/hook/cmake_prefix_path.sh'
+[8.177s] Level 1:colcon.colcon_core.environment:checking '/home/a-baja/abajaws/install/radar_interfaces/lib'
+[8.177s] Level 1:colcon.colcon_core.shell:create_environment_hook('radar_interfaces', 'ld_library_path_lib')
+[8.178s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/hook/ld_library_path_lib.ps1'
+[8.178s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/hook/ld_library_path_lib.dsv'
+[8.179s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/hook/ld_library_path_lib.sh'
+[8.179s] Level 1:colcon.colcon_core.environment:checking '/home/a-baja/abajaws/install/radar_interfaces/bin'
+[8.179s] Level 1:colcon.colcon_core.environment:checking '/home/a-baja/abajaws/install/radar_interfaces/lib/pkgconfig/radar_interfaces.pc'
+[8.180s] Level 1:colcon.colcon_core.environment:checking '/home/a-baja/abajaws/install/radar_interfaces/lib/python3.10/site-packages'
+[8.181s] Level 1:colcon.colcon_core.environment:checking '/home/a-baja/abajaws/install/radar_interfaces/bin'
+[8.182s] INFO:colcon.colcon_core.shell:Creating package script '/home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/package.ps1'
+[8.183s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/package.dsv'
+[8.184s] INFO:colcon.colcon_core.shell:Creating package script '/home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/package.sh'
+[8.185s] INFO:colcon.colcon_core.shell:Creating package script '/home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/package.bash'
+[8.186s] INFO:colcon.colcon_core.shell:Creating package script '/home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/package.zsh'
+[8.187s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/a-baja/abajaws/install/radar_interfaces/share/colcon-core/packages/radar_interfaces)
+[8.188s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/a-baja/abajaws/src/a021vehicle' with build type 'ament_python'
+[8.188s] Level 1:colcon.colcon_core.shell:create_environment_hook('a021vehicle', 'ament_prefix_path')
+[8.189s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/a-baja/abajaws/install/a021vehicle/share/a021vehicle/hook/ament_prefix_path.ps1'
+[8.190s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/a-baja/abajaws/install/a021vehicle/share/a021vehicle/hook/ament_prefix_path.dsv'
+[8.192s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/a-baja/abajaws/install/a021vehicle/share/a021vehicle/hook/ament_prefix_path.sh'
+[8.193s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.193s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.652s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/a-baja/abajaws/src/a021vehicle'
+[8.653s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.653s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.335s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/a-baja/abajaws/install/a021vehicle/share/ament_index/resource_index/packages/a021vehicle
+[9.335s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/a-baja/abajaws/install/a021vehicle/share/a021vehicle/package.xml
+[9.335s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/a-baja/abajaws/install/a021vehicle/share/a021vehicle/launch/vehicle_launch.py
+[9.336s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/a-baja/abajaws/install/a021vehicle/lib/a021vehicle/esp_bridge
+[9.336s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/a-baja/abajaws/install/a021vehicle/lib/a021vehicle/radar_data
+[9.336s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/a-baja/abajaws/install/a021vehicle/lib/a021vehicle/radar_node
+[9.336s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/a-baja/abajaws/install/a021vehicle/lib/a021vehicle/receiver_node
+[9.336s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/a-baja/abajaws/install/a021vehicle/lib/a021vehicle/vehiclecontrol
+[9.342s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/a-baja/abajaws/build/a021vehicle': LD_LIBRARY_PATH=/home/a-baja/abajaws/install/radar_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/a-baja/abajaws/build/a021vehicle/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/a-baja/abajaws/build/a021vehicle/build --no-deps symlink_data --force
+[10.197s] Level 1:colcon.colcon_core.shell:create_environment_hook('a021vehicle', 'pythonpath_develop')
+[10.198s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/a-baja/abajaws/build/a021vehicle/share/a021vehicle/hook/pythonpath_develop.ps1'
+[10.199s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/a-baja/abajaws/build/a021vehicle' returned '0': LD_LIBRARY_PATH=/home/a-baja/abajaws/install/radar_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/a-baja/abajaws/build/a021vehicle/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/a-baja/abajaws/build/a021vehicle/build --no-deps symlink_data --force
+[10.200s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/a-baja/abajaws/build/a021vehicle/share/a021vehicle/hook/pythonpath_develop.dsv'
+[10.202s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/a-baja/abajaws/build/a021vehicle/share/a021vehicle/hook/pythonpath_develop.sh'
+[10.204s] Level 1:colcon.colcon_core.environment:checking '/home/a-baja/abajaws/install/a021vehicle' for CMake module files
+[10.205s] Level 1:colcon.colcon_core.environment:checking '/home/a-baja/abajaws/install/a021vehicle' for CMake config files
+[10.207s] Level 1:colcon.colcon_core.environment:checking '/home/a-baja/abajaws/install/a021vehicle/lib'
+[10.208s] Level 1:colcon.colcon_core.environment:checking '/home/a-baja/abajaws/install/a021vehicle/bin'
+[10.208s] Level 1:colcon.colcon_core.environment:checking '/home/a-baja/abajaws/install/a021vehicle/lib/pkgconfig/a021vehicle.pc'
+[10.209s] Level 1:colcon.colcon_core.environment:checking '/home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages'
+[10.209s] Level 1:colcon.colcon_core.shell:create_environment_hook('a021vehicle', 'pythonpath')
+[10.210s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/a-baja/abajaws/install/a021vehicle/share/a021vehicle/hook/pythonpath.ps1'
+[10.211s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/a-baja/abajaws/install/a021vehicle/share/a021vehicle/hook/pythonpath.dsv'
+[10.212s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/a-baja/abajaws/install/a021vehicle/share/a021vehicle/hook/pythonpath.sh'
+[10.213s] Level 1:colcon.colcon_core.environment:checking '/home/a-baja/abajaws/install/a021vehicle/bin'
+[10.213s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(a021vehicle)
+[10.214s] INFO:colcon.colcon_core.shell:Creating package script '/home/a-baja/abajaws/install/a021vehicle/share/a021vehicle/package.ps1'
+[10.215s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/a-baja/abajaws/install/a021vehicle/share/a021vehicle/package.dsv'
+[10.217s] INFO:colcon.colcon_core.shell:Creating package script '/home/a-baja/abajaws/install/a021vehicle/share/a021vehicle/package.sh'
+[10.219s] INFO:colcon.colcon_core.shell:Creating package script '/home/a-baja/abajaws/install/a021vehicle/share/a021vehicle/package.bash'
+[10.219s] INFO:colcon.colcon_core.shell:Creating package script '/home/a-baja/abajaws/install/a021vehicle/share/a021vehicle/package.zsh'
+[10.220s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/a-baja/abajaws/install/a021vehicle/share/colcon-core/packages/a021vehicle)
+[10.220s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[10.221s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[10.221s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[10.222s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[10.223s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[10.224s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/a-baja/abajaws/install/local_setup.ps1'
+[10.227s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/a-baja/abajaws/install/_local_setup_util_ps1.py'
+[10.229s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/a-baja/abajaws/install/setup.ps1'
+[10.234s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/a-baja/abajaws/install/local_setup.sh'
+[10.235s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/a-baja/abajaws/install/_local_setup_util_sh.py'
+[10.236s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/a-baja/abajaws/install/setup.sh'
+[10.239s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/a-baja/abajaws/install/local_setup.bash'
+[10.240s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/a-baja/abajaws/install/setup.bash'
+[10.241s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/a-baja/abajaws/install/local_setup.zsh'
+[10.242s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/a-baja/abajaws/install/setup.zsh'

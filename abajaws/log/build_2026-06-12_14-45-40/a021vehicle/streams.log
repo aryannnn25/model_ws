@@ -1,0 +1,102 @@
+[1.097s] Invoking command in '/home/a-baja/abajaws/build/a021vehicle': LD_LIBRARY_PATH=/home/a-baja/abajaws/install/radar_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/a-baja/abajaws/build/a021vehicle/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/a-baja/abajaws/build/a021vehicle/build
+[1.512s] running develop
+[1.772s] Removing /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle.egg-link (link to .)
+[1.841s] Invoked command in '/home/a-baja/abajaws/build/a021vehicle' returned '0': LD_LIBRARY_PATH=/home/a-baja/abajaws/install/radar_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/a-baja/abajaws/build/a021vehicle/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/a-baja/abajaws/build/a021vehicle/build
+[1.843s] Invoking command in '/home/a-baja/abajaws/src/a021vehicle': LD_LIBRARY_PATH=/home/a-baja/abajaws/install/radar_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/a-baja/abajaws/build/a021vehicle/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/a021vehicle build --build-base /home/a-baja/abajaws/build/a021vehicle/build install --record /home/a-baja/abajaws/build/a021vehicle/install.log --single-version-externally-managed install_data --force
+[2.225s] running egg_info
+[2.226s] writing ../../build/a021vehicle/a021vehicle.egg-info/PKG-INFO
+[2.226s] writing dependency_links to ../../build/a021vehicle/a021vehicle.egg-info/dependency_links.txt
+[2.227s] writing entry points to ../../build/a021vehicle/a021vehicle.egg-info/entry_points.txt
+[2.227s] writing requirements to ../../build/a021vehicle/a021vehicle.egg-info/requires.txt
+[2.227s] writing top-level names to ../../build/a021vehicle/a021vehicle.egg-info/top_level.txt
+[2.230s] reading manifest file '../../build/a021vehicle/a021vehicle.egg-info/SOURCES.txt'
+[2.232s] writing manifest file '../../build/a021vehicle/a021vehicle.egg-info/SOURCES.txt'
+[2.232s] running build
+[2.232s] running build_py
+[2.237s] running install
+[2.238s] running install_lib
+[2.239s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/__init__.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle
+[2.239s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/usbcan.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle
+[2.239s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/vehiclecontrol.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle
+[2.240s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/radar_data_1 copy.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle
+[2.240s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/radar_receiver.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle
+[2.240s] creating /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code
+[2.241s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/archives-code/vehiclecontrol_0 copy.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code
+[2.241s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/archives-code/__init__.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code
+[2.241s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/archives-code/usbcan.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code
+[2.241s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/archives-code/rawradar_0.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code
+[2.241s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/archives-code/vehiclecontrol.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code
+[2.241s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/archives-code/radar.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code
+[2.242s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/archives-code/vehiclecontrol_2.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code
+[2.242s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/archives-code/radar_spi_bridge_0.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code
+[2.242s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/archives-code/radar_data_1 copy.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code
+[2.242s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/archives-code/radar_data_6.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code
+[2.242s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/archives-code/radar_receiver.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code
+[2.242s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/archives-code/radar_data_0.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code
+[2.243s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/archives-code/radar_data_3.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code
+[2.243s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/archives-code/radar_spi_bridge.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code
+[2.243s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/archives-code/vehiclecontrol_2 copy.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code
+[2.243s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/archives-code/radar_data_1.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code
+[2.244s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/archives-code/vehiclecontrol_1.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code
+[2.244s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/archives-code/rawradar.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code
+[2.244s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/archives-code/ros_esp_bridge.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code
+[2.244s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/archives-code/radar_data copy.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code
+[2.244s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/archives-code/vehiclecontrol_0.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code
+[2.244s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/archives-code/radar_data_4.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code
+[2.245s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/archives-code/radar_data.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code
+[2.245s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/archives-code/vehiclecontrol_4.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code
+[2.245s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/archives-code/radar_data_5.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code
+[2.245s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/archives-code/radar_data_2.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code
+[2.246s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/rawradar.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle
+[2.246s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/ros_esp_bridge.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle
+[2.246s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/radar_data copy.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle
+[2.246s] copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/radar_data.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle
+[2.247s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/__init__.py to __init__.cpython-310.pyc
+[2.248s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/usbcan.py to usbcan.cpython-310.pyc
+[2.250s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/vehiclecontrol.py to vehiclecontrol.cpython-310.pyc
+[2.251s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/radar_data_1 copy.py to radar_data_1 copy.cpython-310.pyc
+[2.252s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/radar_receiver.py to radar_receiver.cpython-310.pyc
+[2.253s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code/vehiclecontrol_0 copy.py to vehiclecontrol_0 copy.cpython-310.pyc
+[2.253s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code/__init__.py to __init__.cpython-310.pyc
+[2.254s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code/usbcan.py to usbcan.cpython-310.pyc
+[2.255s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code/rawradar_0.py to rawradar_0.cpython-310.pyc
+[2.257s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code/vehiclecontrol.py to vehiclecontrol.cpython-310.pyc
+[2.258s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code/radar.py to radar.cpython-310.pyc
+[2.260s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code/vehiclecontrol_2.py to vehiclecontrol_2.cpython-310.pyc
+[2.261s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code/radar_spi_bridge_0.py to radar_spi_bridge_0.cpython-310.pyc
+[2.262s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code/radar_data_1 copy.py to radar_data_1 copy.cpython-310.pyc
+[2.263s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code/radar_data_6.py to radar_data_6.cpython-310.pyc
+[2.265s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code/radar_receiver.py to radar_receiver.cpython-310.pyc
+[2.265s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code/radar_data_0.py to radar_data_0.cpython-310.pyc
+[2.266s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code/radar_data_3.py to radar_data_3.cpython-310.pyc
+[2.268s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code/radar_spi_bridge.py to radar_spi_bridge.cpython-310.pyc
+[2.269s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code/vehiclecontrol_2 copy.py to vehiclecontrol_2 copy.cpython-310.pyc
+[2.270s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code/radar_data_1.py to radar_data_1.cpython-310.pyc
+[2.271s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code/vehiclecontrol_1.py to vehiclecontrol_1.cpython-310.pyc
+[2.272s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code/rawradar.py to rawradar.cpython-310.pyc
+[2.274s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code/ros_esp_bridge.py to ros_esp_bridge.cpython-310.pyc
+[2.276s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code/radar_data copy.py to radar_data copy.cpython-310.pyc
+[2.277s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code/vehiclecontrol_0.py to vehiclecontrol_0.cpython-310.pyc
+[2.277s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code/radar_data_4.py to radar_data_4.cpython-310.pyc
+[2.278s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code/radar_data.py to radar_data.cpython-310.pyc
+[2.280s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code/vehiclecontrol_4.py to vehiclecontrol_4.cpython-310.pyc
+[2.281s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code/radar_data_5.py to radar_data_5.cpython-310.pyc
+[2.283s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/archives-code/radar_data_2.py to radar_data_2.cpython-310.pyc
+[2.284s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/rawradar.py to rawradar.cpython-310.pyc
+[2.286s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/ros_esp_bridge.py to ros_esp_bridge.cpython-310.pyc
+[2.287s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/radar_data copy.py to radar_data copy.cpython-310.pyc
+[2.289s] byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/radar_data.py to radar_data.cpython-310.pyc
+[2.290s] running install_data
+[2.290s] copying resource/a021vehicle -> /home/a-baja/abajaws/install/a021vehicle/share/ament_index/resource_index/packages
+[2.291s] copying package.xml -> /home/a-baja/abajaws/install/a021vehicle/share/a021vehicle
+[2.291s] copying launch/vehicle_launch.py -> /home/a-baja/abajaws/install/a021vehicle/share/a021vehicle/launch
+[2.291s] running install_egg_info
+[2.294s] Copying ../../build/a021vehicle/a021vehicle.egg-info to /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle-0.0.0-py3.10.egg-info
+[2.296s] running install_scripts
+[2.328s] Installing esp_bridge script to /home/a-baja/abajaws/install/a021vehicle/lib/a021vehicle
+[2.328s] Installing radar_data script to /home/a-baja/abajaws/install/a021vehicle/lib/a021vehicle
+[2.328s] Installing radar_node script to /home/a-baja/abajaws/install/a021vehicle/lib/a021vehicle
+[2.328s] Installing receiver_node script to /home/a-baja/abajaws/install/a021vehicle/lib/a021vehicle
+[2.328s] Installing vehiclecontrol script to /home/a-baja/abajaws/install/a021vehicle/lib/a021vehicle
+[2.330s] writing list of installed files to '/home/a-baja/abajaws/build/a021vehicle/install.log'
+[2.390s] Invoked command in '/home/a-baja/abajaws/src/a021vehicle' returned '0': LD_LIBRARY_PATH=/home/a-baja/abajaws/install/radar_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/a-baja/abajaws/build/a021vehicle/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/a021vehicle build --build-base /home/a-baja/abajaws/build/a021vehicle/build install --record /home/a-baja/abajaws/build/a021vehicle/install.log --single-version-externally-managed install_data --force

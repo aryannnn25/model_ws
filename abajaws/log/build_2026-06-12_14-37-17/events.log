@@ -1,0 +1,336 @@
+[0.000000] (-) TimerEvent: {}
+[0.000532] (radar_interfaces) JobQueued: {'identifier': 'radar_interfaces', 'dependencies': OrderedDict()}
+[0.001047] (a021vehicle) JobQueued: {'identifier': 'a021vehicle', 'dependencies': OrderedDict([('radar_interfaces', '/home/a-baja/abajaws/install/radar_interfaces')])}
+[0.001233] (radar_interfaces) JobStarted: {'identifier': 'radar_interfaces'}
+[0.012804] (radar_interfaces) JobProgress: {'identifier': 'radar_interfaces', 'progress': 'cmake'}
+[0.013616] (radar_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/a-baja/abajaws/src/radar_interfaces', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/a-baja/abajaws/install/radar_interfaces'], 'cwd': '/home/a-baja/abajaws/build/radar_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'a-baja'), ('SSH_CLIENT', '10.107.221.167 48898 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/a-baja/abajaws/install/radar_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/a-baja'), ('OLDPWD', '/home/a-baja'), ('SSH_TTY', '/dev/pts/7'), ('JETSON_L4T', '36.5.0'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin NX Engineering Reference Developer Kit'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/a-baja/abajaws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'a-baja'), ('JETSON_MODULE', 'NVIDIA Jetson Orin NX (8GB ram)'), ('JETSON_SERIAL_NUMBER', '1421026066720'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '17'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/a-baja/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('AMENT_PREFIX_PATH', '/home/a-baja/abajaws/install/a021vehicle:/home/a-baja/abajaws/install/radar_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/a-baja/abajaws/build/radar_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.107.221.167 48898 10.107.221.103 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages:/home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/a-baja/abajaws/install/radar_interfaces:/home/a-baja/abajaws/install/a021vehicle:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0001')]), 'shell': False}
+[0.099545] (-) TimerEvent: {}
+[0.155325] (radar_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199724] (-) TimerEvent: {}
+[0.289583] (radar_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.298543] (radar_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299794] (-) TimerEvent: {}
+[0.400576] (-) TimerEvent: {}
+[0.480280] (radar_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.490735] (radar_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.491367] (radar_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.492279] (radar_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.497872] (radar_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500648] (-) TimerEvent: {}
+[0.601157] (-) TimerEvent: {}
+[0.627111] (radar_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.653046] (radar_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.653919] (radar_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.655427] (radar_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.665734] (radar_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.701356] (-) TimerEvent: {}
+[0.801935] (-) TimerEvent: {}
+[0.902535] (-) TimerEvent: {}
+[0.991765] (radar_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.002701] (-) TimerEvent: {}
+[1.103297] (-) TimerEvent: {}
+[1.111343] (radar_interfaces) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.181833] (radar_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.189453] (radar_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.203404] (-) TimerEvent: {}
+[1.205138] (radar_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.275558] (radar_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.303552] (-) TimerEvent: {}
+[1.404188] (-) TimerEvent: {}
+[1.504876] (-) TimerEvent: {}
+[1.605605] (-) TimerEvent: {}
+[1.706307] (-) TimerEvent: {}
+[1.791286] (radar_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.806407] (-) TimerEvent: {}
+[1.906979] (-) TimerEvent: {}
+[2.007666] (-) TimerEvent: {}
+[2.108262] (-) TimerEvent: {}
+[2.167315] (radar_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.208382] (-) TimerEvent: {}
+[2.308904] (-) TimerEvent: {}
+[2.409585] (-) TimerEvent: {}
+[2.510561] (-) TimerEvent: {}
+[2.611149] (-) TimerEvent: {}
+[2.644215] (radar_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.691502] (radar_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[2.696059] (radar_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.711328] (-) TimerEvent: {}
+[2.749373] (radar_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[2.749989] (radar_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.750283] (radar_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.750550] (radar_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[2.790573] (radar_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.811435] (-) TimerEvent: {}
+[2.911935] (-) TimerEvent: {}
+[3.010729] (radar_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.012034] (-) TimerEvent: {}
+[3.072282] (radar_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[3.087283] (radar_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/a-baja/abajaws/build/radar_interfaces\n'}
+[3.105329] (radar_interfaces) CommandEnded: {'returncode': 0}
+[3.106970] (radar_interfaces) JobProgress: {'identifier': 'radar_interfaces', 'progress': 'build'}
+[3.108382] (radar_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/a-baja/abajaws/build/radar_interfaces', '--', '-j6', '-l6'], 'cwd': '/home/a-baja/abajaws/build/radar_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'a-baja'), ('SSH_CLIENT', '10.107.221.167 48898 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/a-baja/abajaws/install/radar_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/a-baja'), ('OLDPWD', '/home/a-baja'), ('SSH_TTY', '/dev/pts/7'), ('JETSON_L4T', '36.5.0'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin NX Engineering Reference Developer Kit'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/a-baja/abajaws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'a-baja'), ('JETSON_MODULE', 'NVIDIA Jetson Orin NX (8GB ram)'), ('JETSON_SERIAL_NUMBER', '1421026066720'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '17'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/a-baja/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('AMENT_PREFIX_PATH', '/home/a-baja/abajaws/install/a021vehicle:/home/a-baja/abajaws/install/radar_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/a-baja/abajaws/build/radar_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.107.221.167 48898 10.107.221.103 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages:/home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/a-baja/abajaws/install/radar_interfaces:/home/a-baja/abajaws/install/a021vehicle:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0001')]), 'shell': False}
+[3.112146] (-) TimerEvent: {}
+[3.180540] (radar_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.196353] (radar_interfaces) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[3.199838] (radar_interfaces) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.212324] (-) TimerEvent: {}
+[3.213730] (radar_interfaces) StdoutLine: {'line': b'[  9%] Built target ament_cmake_python_symlink_radar_interfaces\n'}
+[3.312476] (-) TimerEvent: {}
+[3.413053] (-) TimerEvent: {}
+[3.513615] (-) TimerEvent: {}
+[3.600023] (radar_interfaces) StdoutLine: {'line': b'[  9%] Built target radar_interfaces__rs\n'}
+[3.613768] (-) TimerEvent: {}
+[3.637718] (radar_interfaces) StdoutLine: {'line': b'[  9%] Built target radar_interfaces__cpp\n'}
+[3.650132] (radar_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[3.651388] (radar_interfaces) StdoutLine: {'line': b'creating radar_interfaces.egg-info\n'}
+[3.651833] (radar_interfaces) StdoutLine: {'line': b'writing radar_interfaces.egg-info/PKG-INFO\n'}
+[3.652249] (radar_interfaces) StdoutLine: {'line': b'writing dependency_links to radar_interfaces.egg-info/dependency_links.txt\n'}
+[3.652551] (radar_interfaces) StdoutLine: {'line': b'writing top-level names to radar_interfaces.egg-info/top_level.txt\n'}
+[3.653162] (radar_interfaces) StdoutLine: {'line': b"writing manifest file 'radar_interfaces.egg-info/SOURCES.txt'\n"}
+[3.654756] (radar_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.656942] (radar_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/radar_interfaces__rosidl_generator_c.dir/rosidl_generator_c/radar_interfaces/msg/detail/radar_message__functions.c.o\x1b[0m\n'}
+[3.657722] (radar_interfaces) StdoutLine: {'line': b"reading manifest file 'radar_interfaces.egg-info/SOURCES.txt'\n"}
+[3.658000] (radar_interfaces) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.658995] (radar_interfaces) StdoutLine: {'line': b"writing manifest file 'radar_interfaces.egg-info/SOURCES.txt'\n"}
+[3.663249] (radar_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.713928] (-) TimerEvent: {}
+[3.735723] (radar_interfaces) StdoutLine: {'line': b'[ 21%] Built target ament_cmake_python_build_radar_interfaces_egg\n'}
+[3.766324] (radar_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking C shared library libradar_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[3.814091] (-) TimerEvent: {}
+[3.826247] (radar_interfaces) StdoutLine: {'line': b'[ 25%] Built target radar_interfaces__rosidl_generator_c\n'}
+[3.844557] (radar_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.849170] (radar_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.856558] (radar_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.914250] (-) TimerEvent: {}
+[4.014908] (-) TimerEvent: {}
+[4.058134] (radar_interfaces) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/radar_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/radar_interfaces/msg/radar_message__type_support.cpp.o\x1b[0m\n'}
+[4.089864] (radar_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/radar_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/radar_interfaces/msg/detail/radar_message__type_support.cpp.o\x1b[0m\n'}
+[4.094243] (radar_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/radar_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/radar_interfaces/msg/detail/dds_fastrtps/radar_message__type_support.cpp.o\x1b[0m\n'}
+[4.115063] (-) TimerEvent: {}
+[4.215684] (-) TimerEvent: {}
+[4.283185] (radar_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/radar_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/radar_interfaces/msg/detail/radar_message__type_support.c.o\x1b[0m\n'}
+[4.286052] (radar_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/radar_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/radar_interfaces/msg/radar_message__type_support.cpp.o\x1b[0m\n'}
+[4.315928] (-) TimerEvent: {}
+[4.319074] (radar_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/radar_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/radar_interfaces/msg/detail/radar_message__type_support_c.cpp.o\x1b[0m\n'}
+[4.340039] (radar_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking C shared library libradar_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.351348] (radar_interfaces) StdoutLine: {'line': b'[ 59%] \x1b[32m\x1b[1mLinking CXX shared library libradar_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.416138] (-) TimerEvent: {}
+[4.451279] (radar_interfaces) StdoutLine: {'line': b'[ 59%] Built target radar_interfaces__rosidl_typesupport_introspection_c\n'}
+[4.494036] (radar_interfaces) StdoutLine: {'line': b'[ 59%] Built target radar_interfaces__rosidl_typesupport_c\n'}
+[4.516330] (-) TimerEvent: {}
+[4.594544] (radar_interfaces) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX shared library libradar_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.616502] (-) TimerEvent: {}
+[4.660344] (radar_interfaces) StdoutLine: {'line': b'[ 62%] Built target radar_interfaces__rosidl_typesupport_cpp\n'}
+[4.716676] (-) TimerEvent: {}
+[4.787307] (radar_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libradar_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.816849] (-) TimerEvent: {}
+[4.828178] (radar_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libradar_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.852782] (radar_interfaces) StdoutLine: {'line': b'[ 68%] Built target radar_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[4.917024] (-) TimerEvent: {}
+[4.965683] (radar_interfaces) StdoutLine: {'line': b'[ 68%] Built target radar_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[4.978042] (radar_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libradar_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.017178] (-) TimerEvent: {}
+[5.106566] (radar_interfaces) StdoutLine: {'line': b'[ 71%] Built target radar_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[5.117286] (-) TimerEvent: {}
+[5.144398] (radar_interfaces) StdoutLine: {'line': b'[ 71%] Built target radar_interfaces\n'}
+[5.183412] (radar_interfaces) StdoutLine: {'line': b'[ 75%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[5.217412] (-) TimerEvent: {}
+[5.317940] (-) TimerEvent: {}
+[5.418499] (-) TimerEvent: {}
+[5.519009] (-) TimerEvent: {}
+[5.619523] (-) TimerEvent: {}
+[5.664005] (radar_interfaces) StdoutLine: {'line': b'[ 75%] Built target radar_interfaces__py\n'}
+[5.701799] (radar_interfaces) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding C object CMakeFiles/radar_interfaces__rosidl_generator_py.dir/rosidl_generator_py/radar_interfaces/msg/_radar_message_s.c.o\x1b[0m\n'}
+[5.719750] (-) TimerEvent: {}
+[5.820386] (-) TimerEvent: {}
+[5.887626] (radar_interfaces) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/radar_interfaces/libradar_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[5.920570] (-) TimerEvent: {}
+[5.958100] (radar_interfaces) StdoutLine: {'line': b'[ 81%] Built target radar_interfaces__rosidl_generator_py\n'}
+[5.992313] (radar_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/radar_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/radar_interfaces/_radar_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[5.992786] (radar_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/radar_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/radar_interfaces/_radar_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[5.993022] (radar_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/radar_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/radar_interfaces/_radar_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[6.020746] (-) TimerEvent: {}
+[6.121805] (-) TimerEvent: {}
+[6.141901] (radar_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/radar_interfaces/radar_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[6.143601] (radar_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/radar_interfaces/radar_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[6.144866] (radar_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/radar_interfaces/radar_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[6.196814] (radar_interfaces) StdoutLine: {'line': b'[100%] Built target radar_interfaces__rosidl_typesupport_c__pyext\n'}
+[6.197233] (radar_interfaces) StdoutLine: {'line': b'[100%] Built target radar_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[6.216503] (radar_interfaces) StdoutLine: {'line': b'[100%] Built target radar_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[6.221891] (-) TimerEvent: {}
+[6.240235] (radar_interfaces) CommandEnded: {'returncode': 0}
+[6.242504] (radar_interfaces) JobProgress: {'identifier': 'radar_interfaces', 'progress': 'install'}
+[6.259356] (radar_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/a-baja/abajaws/build/radar_interfaces'], 'cwd': '/home/a-baja/abajaws/build/radar_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'a-baja'), ('SSH_CLIENT', '10.107.221.167 48898 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/a-baja/abajaws/install/radar_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/a-baja'), ('OLDPWD', '/home/a-baja'), ('SSH_TTY', '/dev/pts/7'), ('JETSON_L4T', '36.5.0'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin NX Engineering Reference Developer Kit'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/a-baja/abajaws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'a-baja'), ('JETSON_MODULE', 'NVIDIA Jetson Orin NX (8GB ram)'), ('JETSON_SERIAL_NUMBER', '1421026066720'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '17'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/a-baja/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('AMENT_PREFIX_PATH', '/home/a-baja/abajaws/install/a021vehicle:/home/a-baja/abajaws/install/radar_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/a-baja/abajaws/build/radar_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.107.221.167 48898 10.107.221.103 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages:/home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/a-baja/abajaws/install/radar_interfaces:/home/a-baja/abajaws/install/a021vehicle:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0001')]), 'shell': False}
+[6.276308] (radar_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.277375] (radar_interfaces) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[6.278193] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/ament_index/resource_index/rosidl_interfaces/radar_interfaces\n'}
+[6.295275] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/detail/radar_message__functions.h\n'}
+[6.312998] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/detail/radar_message__struct.h\n'}
+[6.322070] (-) TimerEvent: {}
+[6.331392] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/detail/radar_message__type_support.h\n'}
+[6.348624] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/radar_message.h\n'}
+[6.364704] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[6.380652] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/environment/library_path.sh\n'}
+[6.396266] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/environment/library_path.dsv\n'}
+[6.413263] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/detail/radar_message__rosidl_typesupport_fastrtps_c.h\n'}
+[6.422197] (-) TimerEvent: {}
+[6.429375] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[6.445837] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/detail/radar_message__rosidl_typesupport_introspection_c.h\n'}
+[6.462058] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.479477] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/detail/radar_message__builder.hpp\n'}
+[6.498293] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/detail/radar_message__struct.hpp\n'}
+[6.514493] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/detail/radar_message__traits.hpp\n'}
+[6.522312] (-) TimerEvent: {}
+[6.530722] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/detail/radar_message__type_support.hpp\n'}
+[6.547050] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/radar_message.hpp\n'}
+[6.563754] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[6.582514] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/detail/radar_message__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.599250] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[6.616110] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/include/radar_interfaces/radar_interfaces/msg/detail/radar_message__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.622410] (-) TimerEvent: {}
+[6.632642] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/environment/pythonpath.sh\n'}
+[6.649410] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/environment/pythonpath.dsv\n'}
+[6.666197] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[6.682736] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[6.698256] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[6.714176] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[6.722517] (-) TimerEvent: {}
+[6.731130] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/__init__.py\n'}
+[6.747472] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/_radar_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[6.765913] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/_radar_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[6.782088] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/_radar_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[6.798083] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/libradar_interfaces__rosidl_generator_py.so\n'}
+[6.813707] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/msg/__init__.py\n'}
+[6.822643] (-) TimerEvent: {}
+[6.829424] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/msg/_radar_message.py\n'}
+[6.846140] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/msg/_radar_message_s.c\n'}
+[6.861908] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/radar_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[6.878316] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/radar_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[6.894694] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/radar_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[6.911001] (radar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/radar_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[6.911390] (radar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/radar_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[6.911712] (radar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/radar_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[6.912112] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/ament_index/resource_index/rust_packages/radar_interfaces\n'}
+[6.922830] (-) TimerEvent: {}
+[6.931853] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/rust/Cargo.toml\n'}
+[6.947513] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/rust/build.rs\n'}
+[6.962739] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/rust/src/lib.rs\n'}
+[6.978903] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/rust/src/msg.rs\n'}
+[6.997158] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/rust/src/msg/rmw.rs\n'}
+[7.014249] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/msg/RadarMessage.idl\n'}
+[7.022940] (-) TimerEvent: {}
+[7.031298] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/msg/RadarMessage.msg\n'}
+[7.049484] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/ament_index/resource_index/package_run_dependencies/radar_interfaces\n'}
+[7.065744] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/ament_index/resource_index/parent_prefix_path/radar_interfaces\n'}
+[7.083212] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/environment/ament_prefix_path.sh\n'}
+[7.099813] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/environment/ament_prefix_path.dsv\n'}
+[7.117942] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/environment/path.sh\n'}
+[7.123080] (-) TimerEvent: {}
+[7.132690] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/environment/path.dsv\n'}
+[7.147581] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/local_setup.bash\n'}
+[7.164760] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/local_setup.sh\n'}
+[7.182300] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/local_setup.zsh\n'}
+[7.198508] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/local_setup.dsv\n'}
+[7.214806] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/package.dsv\n'}
+[7.223203] (-) TimerEvent: {}
+[7.231163] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/ament_index/resource_index/packages/radar_interfaces\n'}
+[7.248131] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[7.263665] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[7.279714] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[7.295911] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[7.314028] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[7.323365] (-) TimerEvent: {}
+[7.331126] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[7.347755] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[7.364208] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/radar_interfacesConfig.cmake\n'}
+[7.380620] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/radar_interfacesConfig-version.cmake\n'}
+[7.394859] (radar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/package.xml\n'}
+[7.411905] (radar_interfaces) StdoutLine: {'line': b'-- Installing: /home/a-baja/abajaws/install/radar_interfaces/lib/libradar_interfaces__rosidl_generator_c.so\n'}
+[7.412407] (radar_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/a-baja/abajaws/install/radar_interfaces/lib/libradar_interfaces__rosidl_generator_c.so" to ""\n'}
+[7.412605] (radar_interfaces) StdoutLine: {'line': b'-- Installing: /home/a-baja/abajaws/install/radar_interfaces/lib/libradar_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[7.413058] (radar_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/a-baja/abajaws/install/radar_interfaces/lib/libradar_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[7.413904] (radar_interfaces) StdoutLine: {'line': b'-- Installing: /home/a-baja/abajaws/install/radar_interfaces/lib/libradar_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[7.414479] (radar_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/a-baja/abajaws/install/radar_interfaces/lib/libradar_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[7.414802] (radar_interfaces) StdoutLine: {'line': b'-- Installing: /home/a-baja/abajaws/install/radar_interfaces/lib/libradar_interfaces__rosidl_typesupport_c.so\n'}
+[7.415692] (radar_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/a-baja/abajaws/install/radar_interfaces/lib/libradar_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[7.416027] (radar_interfaces) StdoutLine: {'line': b'-- Installing: /home/a-baja/abajaws/install/radar_interfaces/lib/libradar_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[7.416936] (radar_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/a-baja/abajaws/install/radar_interfaces/lib/libradar_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[7.417248] (radar_interfaces) StdoutLine: {'line': b'-- Installing: /home/a-baja/abajaws/install/radar_interfaces/lib/libradar_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[7.418207] (radar_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/a-baja/abajaws/install/radar_interfaces/lib/libradar_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[7.418526] (radar_interfaces) StdoutLine: {'line': b'-- Installing: /home/a-baja/abajaws/install/radar_interfaces/lib/libradar_interfaces__rosidl_typesupport_cpp.so\n'}
+[7.419679] (radar_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/a-baja/abajaws/install/radar_interfaces/lib/libradar_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[7.423436] (-) TimerEvent: {}
+[7.486675] (radar_interfaces) StdoutLine: {'line': b"Listing '/home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces'...\n"}
+[7.487209] (radar_interfaces) StdoutLine: {'line': b"Compiling '/home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/__init__.py'...\n"}
+[7.487445] (radar_interfaces) StdoutLine: {'line': b"Listing '/home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/msg'...\n"}
+[7.487654] (radar_interfaces) StdoutLine: {'line': b"Compiling '/home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/msg/__init__.py'...\n"}
+[7.487900] (radar_interfaces) StdoutLine: {'line': b"Compiling '/home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages/radar_interfaces/msg/_radar_message.py'...\n"}
+[7.497040] (radar_interfaces) StdoutLine: {'line': b'-- Installing: /home/a-baja/abajaws/install/radar_interfaces/lib/libradar_interfaces__rosidl_generator_py.so\n'}
+[7.497935] (radar_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/a-baja/abajaws/install/radar_interfaces/lib/libradar_interfaces__rosidl_generator_py.so" to ""\n'}
+[7.498262] (radar_interfaces) StdoutLine: {'line': b'-- Installing: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/export_radar_interfaces__rosidl_generator_cExport.cmake\n'}
+[7.498822] (radar_interfaces) StdoutLine: {'line': b'-- Installing: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/export_radar_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[7.499369] (radar_interfaces) StdoutLine: {'line': b'-- Installing: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/export_radar_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[7.499925] (radar_interfaces) StdoutLine: {'line': b'-- Installing: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/export_radar_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[7.500472] (radar_interfaces) StdoutLine: {'line': b'-- Installing: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/radar_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[7.500983] (radar_interfaces) StdoutLine: {'line': b'-- Installing: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/radar_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[7.501557] (radar_interfaces) StdoutLine: {'line': b'-- Installing: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/radar_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[7.502063] (radar_interfaces) StdoutLine: {'line': b'-- Installing: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/radar_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[7.502601] (radar_interfaces) StdoutLine: {'line': b'-- Installing: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/export_radar_interfaces__rosidl_generator_cppExport.cmake\n'}
+[7.503159] (radar_interfaces) StdoutLine: {'line': b'-- Installing: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/export_radar_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[7.503685] (radar_interfaces) StdoutLine: {'line': b'-- Installing: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/export_radar_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[7.504219] (radar_interfaces) StdoutLine: {'line': b'-- Installing: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/radar_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[7.504746] (radar_interfaces) StdoutLine: {'line': b'-- Installing: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/radar_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[7.505289] (radar_interfaces) StdoutLine: {'line': b'-- Installing: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/radar_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[7.505838] (radar_interfaces) StdoutLine: {'line': b'-- Installing: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/radar_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[7.506364] (radar_interfaces) StdoutLine: {'line': b'-- Installing: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/export_radar_interfaces__rosidl_generator_pyExport.cmake\n'}
+[7.506877] (radar_interfaces) StdoutLine: {'line': b'-- Installing: /home/a-baja/abajaws/install/radar_interfaces/share/radar_interfaces/cmake/export_radar_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[7.513824] (radar_interfaces) CommandEnded: {'returncode': 0}
+[7.523765] (-) TimerEvent: {}
+[7.586186] (radar_interfaces) JobEnded: {'identifier': 'radar_interfaces', 'rc': 0}
+[7.588436] (a021vehicle) JobStarted: {'identifier': 'a021vehicle'}
+[7.623937] (-) TimerEvent: {}
+[7.724517] (-) TimerEvent: {}
+[7.825044] (-) TimerEvent: {}
+[7.925583] (-) TimerEvent: {}
+[8.026123] (-) TimerEvent: {}
+[8.126676] (-) TimerEvent: {}
+[8.227193] (-) TimerEvent: {}
+[8.327699] (-) TimerEvent: {}
+[8.428217] (-) TimerEvent: {}
+[8.528852] (-) TimerEvent: {}
+[8.629382] (-) TimerEvent: {}
+[8.729882] (-) TimerEvent: {}
+[8.736759] (a021vehicle) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/a-baja/abajaws/build/a021vehicle/build', '--no-deps', 'symlink_data', '--force'], 'cwd': '/home/a-baja/abajaws/build/a021vehicle', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'a-baja', 'SSH_CLIENT': '10.107.221.167 48898 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/a-baja/abajaws/install/radar_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64', 'MOTD_SHOWN': 'pam', 'HOME': '/home/a-baja', 'OLDPWD': '/home/a-baja', 'SSH_TTY': '/dev/pts/7', 'JETSON_L4T': '36.5.0', 'ROS_PYTHON_VERSION': '3', 'JETSON_MODEL': 'NVIDIA Jetson Orin NX Engineering Reference Developer Kit', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/a-baja/abajaws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'a-baja', 'JETSON_MODULE': 'NVIDIA Jetson Orin NX (8GB ram)', 'JETSON_SERIAL_NUMBER': '1421026066720', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '17', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/a-baja/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra234', 'AMENT_PREFIX_PATH': '/home/a-baja/abajaws/install/a021vehicle:/home/a-baja/abajaws/install/radar_interfaces:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_CUDA_ARCH_BIN': '8.7', 'PWD': '/home/a-baja/abajaws/build/a021vehicle', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.107.221.167 48898 10.107.221.103 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/a-baja/abajaws/build/a021vehicle/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages:/home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages:/home/a-baja/abajaws/install/radar_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'JETSON_JETPACK': '', 'CMAKE_PREFIX_PATH': '/home/a-baja/abajaws/install/radar_interfaces', 'JETSON_P_NUMBER': 'p3767-0001'}, 'shell': False}
+[8.830023] (-) TimerEvent: {}
+[8.930552] (-) TimerEvent: {}
+[9.031054] (-) TimerEvent: {}
+[9.131551] (-) TimerEvent: {}
+[9.156230] (a021vehicle) StdoutLine: {'line': b'running develop\n'}
+[9.231717] (-) TimerEvent: {}
+[9.332234] (-) TimerEvent: {}
+[9.412887] (a021vehicle) StdoutLine: {'line': b'running egg_info\n'}
+[9.413285] (a021vehicle) StdoutLine: {'line': b'writing a021vehicle.egg-info/PKG-INFO\n'}
+[9.413688] (a021vehicle) StdoutLine: {'line': b'writing dependency_links to a021vehicle.egg-info/dependency_links.txt\n'}
+[9.413992] (a021vehicle) StdoutLine: {'line': b'writing entry points to a021vehicle.egg-info/entry_points.txt\n'}
+[9.414221] (a021vehicle) StdoutLine: {'line': b'writing requirements to a021vehicle.egg-info/requires.txt\n'}
+[9.414367] (a021vehicle) StdoutLine: {'line': b'writing top-level names to a021vehicle.egg-info/top_level.txt\n'}
+[9.418284] (a021vehicle) StdoutLine: {'line': b"reading manifest file 'a021vehicle.egg-info/SOURCES.txt'\n"}
+[9.420044] (a021vehicle) StdoutLine: {'line': b"writing manifest file 'a021vehicle.egg-info/SOURCES.txt'\n"}
+[9.432294] (-) TimerEvent: {}
+[9.511706] (a021vehicle) StdoutLine: {'line': b'running build_ext\n'}
+[9.512117] (a021vehicle) StdoutLine: {'line': b'Creating /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle.egg-link (link to .)\n'}
+[9.513677] (a021vehicle) StdoutLine: {'line': b'Installing esp_bridge script to /home/a-baja/abajaws/install/a021vehicle/lib/a021vehicle\n'}
+[9.514044] (a021vehicle) StdoutLine: {'line': b'Installing radar_data script to /home/a-baja/abajaws/install/a021vehicle/lib/a021vehicle\n'}
+[9.514257] (a021vehicle) StdoutLine: {'line': b'Installing radar_node script to /home/a-baja/abajaws/install/a021vehicle/lib/a021vehicle\n'}
+[9.514468] (a021vehicle) StdoutLine: {'line': b'Installing receiver_node script to /home/a-baja/abajaws/install/a021vehicle/lib/a021vehicle\n'}
+[9.514668] (a021vehicle) StdoutLine: {'line': b'Installing vehiclecontrol script to /home/a-baja/abajaws/install/a021vehicle/lib/a021vehicle\n'}
+[9.515034] (a021vehicle) StdoutLine: {'line': b'\n'}
+[9.515135] (a021vehicle) StdoutLine: {'line': b'Installed /home/a-baja/abajaws/build/a021vehicle\n'}
+[9.515259] (a021vehicle) StdoutLine: {'line': b'running symlink_data\n'}
+[9.515455] (a021vehicle) StdoutLine: {'line': b'symbolically linking /home/a-baja/abajaws/build/a021vehicle/resource/a021vehicle -> /home/a-baja/abajaws/install/a021vehicle/share/ament_index/resource_index/packages\n'}
+[9.515673] (a021vehicle) StdoutLine: {'line': b'symbolically linking /home/a-baja/abajaws/build/a021vehicle/package.xml -> /home/a-baja/abajaws/install/a021vehicle/share/a021vehicle\n'}
+[9.515854] (a021vehicle) StdoutLine: {'line': b'symbolically linking /home/a-baja/abajaws/build/a021vehicle/launch/vehicle_launch.py -> /home/a-baja/abajaws/install/a021vehicle/share/a021vehicle/launch\n'}
+[9.532473] (-) TimerEvent: {}
+[9.595886] (a021vehicle) CommandEnded: {'returncode': 0}
+[9.618777] (a021vehicle) JobEnded: {'identifier': 'a021vehicle', 'rc': 0}
+[9.620759] (-) EventReactorShutdown: {}

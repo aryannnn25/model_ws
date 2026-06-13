@@ -1,0 +1,9 @@
+[0.000000] (-) TimerEvent: {}
+[0.001029] (-) JobUnselected: {'identifier': 'radar_interfaces'}
+[0.001115] (a021vehicle) JobQueued: {'identifier': 'a021vehicle', 'dependencies': OrderedDict([('radar_interfaces', '/home/a-baja/abajaws/install/radar_interfaces')])}
+[0.001178] (a021vehicle) JobStarted: {'identifier': 'a021vehicle'}
+[0.099535] (-) TimerEvent: {}
+[0.200084] (-) TimerEvent: {}
+[0.300692] (-) TimerEvent: {}
+[0.335993] (a021vehicle) JobEnded: {'identifier': 'a021vehicle', 'rc': 0}
+[0.338664] (-) EventReactorShutdown: {}

@@ -1,0 +1,30 @@
+running egg_info
+writing ../../build/a021vehicle/a021vehicle.egg-info/PKG-INFO
+writing dependency_links to ../../build/a021vehicle/a021vehicle.egg-info/dependency_links.txt
+writing entry points to ../../build/a021vehicle/a021vehicle.egg-info/entry_points.txt
+writing requirements to ../../build/a021vehicle/a021vehicle.egg-info/requires.txt
+writing top-level names to ../../build/a021vehicle/a021vehicle.egg-info/top_level.txt
+reading manifest file '../../build/a021vehicle/a021vehicle.egg-info/SOURCES.txt'
+writing manifest file '../../build/a021vehicle/a021vehicle.egg-info/SOURCES.txt'
+running build
+running build_py
+copying a021vehicle/i_radar_data.py -> /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle
+copying a021vehicle/radar_data.py -> /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle
+running install
+running install_lib
+copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/i_radar_data.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle
+copying /home/a-baja/abajaws/build/a021vehicle/build/lib/a021vehicle/radar_data.py -> /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle
+byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/i_radar_data.py to i_radar_data.cpython-310.pyc
+byte-compiling /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle/radar_data.py to radar_data.cpython-310.pyc
+running install_data
+copying launch/vehicle_launch.py -> /home/a-baja/abajaws/install/a021vehicle/share/a021vehicle/launch
+running install_egg_info
+removing '/home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/a021vehicle/a021vehicle.egg-info to /home/a-baja/abajaws/install/a021vehicle/lib/python3.10/site-packages/a021vehicle-0.0.0-py3.10.egg-info
+running install_scripts
+Installing esp_bridge script to /home/a-baja/abajaws/install/a021vehicle/lib/a021vehicle
+Installing radar_data script to /home/a-baja/abajaws/install/a021vehicle/lib/a021vehicle
+Installing radar_node script to /home/a-baja/abajaws/install/a021vehicle/lib/a021vehicle
+Installing receiver_node script to /home/a-baja/abajaws/install/a021vehicle/lib/a021vehicle
+Installing vehiclecontrol script to /home/a-baja/abajaws/install/a021vehicle/lib/a021vehicle
+writing list of installed files to '/home/a-baja/abajaws/build/a021vehicle/install.log'
